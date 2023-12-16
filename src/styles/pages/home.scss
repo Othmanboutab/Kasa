@@ -1,0 +1,19 @@
+@import "../variables/_variables";
+
+.cards-container {
+  background-color: $bg-gray;
+  width: 100%;
+  margin-block: 3rem;
+  border-radius: $border-radius;
+  flex-wrap: wrap;
+  gap: 55px;
+  display: flex;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding-block: 55px;
+
+  @media only screen and (max-width: $mobile-width) {
+    background-color: $white;
+  }
+}

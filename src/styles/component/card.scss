@@ -1,0 +1,37 @@
+@import "../variables/_variables";
+
+.card {
+  width: 340px;
+  height: 340px;
+  display: block;
+  position: relative;
+
+  @media only screen and (max-width: $mobile-width) {
+    width: 100%;
+    height: 255px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    object-fit: cover;
+    filter: brightness(60%);
+  }
+
+  p {
+    position: absolute;
+    bottom: 0px;
+    color: $white;
+    left: 20px;
+    font-size: 18px;
+  }
+
+  &:hover img {
+    filter: brightness(100%);
+  }
+  &:hover p {
+    display: none;
+  }
+}

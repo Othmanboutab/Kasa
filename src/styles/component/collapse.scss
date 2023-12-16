@@ -1,0 +1,28 @@
+@import "../variables/_variables";
+
+.collapse-container {
+  width: 100%;
+  cursor: pointer;
+
+  .collapse-header {
+    background-color: $primary;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+    padding: 10px 20px;
+
+    h2 {
+      margin: 0;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+
+  .collapse-content {
+    background-color: $bg-gray;
+    padding: 10px 20px;
+    color: $primary;
+    font-size: 24px;
+  }
+}

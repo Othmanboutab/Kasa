@@ -1,0 +1,12 @@
+@import "../variables/_variables";
+
+.rating-stars {
+  .fa-solid {
+    &.filled {
+      color: $primary;
+    }
+    &.empty {
+      color: #e3e3e3;
+    }
+  }
+}

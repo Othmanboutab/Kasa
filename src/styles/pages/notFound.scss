@@ -1,0 +1,47 @@
+@import "../variables/_variables";
+
+.not-found-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @media only screen and (max-width: $mobile-width) {
+    margin-block: 80px;
+    padding: 20px;
+  }
+
+  .detail {
+    margin-block: 60px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    color: $primary;
+
+    h2 {
+      font-size: 288px;
+      margin: 0;
+
+      @media only screen and (max-width: $mobile-width) {
+        font-size: 96px;
+      }
+    }
+
+    p {
+      font-size: 36px;
+      @media only screen and (max-width: $mobile-width) {
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  }
+
+  .back {
+    color: $primary;
+    font-size: 18px;
+    margin-block: 60px;
+    @media only screen and (max-width: $mobile-width) {
+      font-size: 14px;
+    }
+  }
+}
