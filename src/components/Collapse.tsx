@@ -1,6 +1,12 @@
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import "../styles/component/collapse.scss";
-const Collapse = ({ title, children, className }: any) => {
+
+interface Props {
+  title: string;
+  children: ReactNode;
+  className: string;
+}
+const Collapse = ({ title, children, className }: Props) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const toggleCollapse = () => {

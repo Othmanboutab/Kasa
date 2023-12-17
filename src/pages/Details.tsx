@@ -8,7 +8,7 @@ import RatingStars from "../components/RatingsStars";
 const Details = () => {
   const { id } = useParams<{ id: string }>();
 
-  const currentLogement = logements?.find((logement) => logement.id === id);
+  const currentLogement = logements?.find((logement) => logement?.id === id);
 
   if (!currentLogement) return <p>Aucun logement trouvé</p>;
 
@@ -35,8 +35,8 @@ const Details = () => {
             </div>
             <div className="tags-container">
               <div className="tags-container">
-                {tags.map((tag) => (
-                  <span>{tag}</span>
+                {tags.map((tag: string, index: number) => (
+                  <span key={index}>{tag}</span>
                 ))}
               </div>
             </div>
@@ -60,8 +60,8 @@ const Details = () => {
 
           <Collapse title="Equipments" className="equipments">
             <div className="content">
-              {equipments.map((equipment: string) => (
-                <span>{equipment}</span>
+              {equipments.map((equipment: string, index: number) => (
+                <span key={index}>{equipment}</span>
               ))}
             </div>
           </Collapse>

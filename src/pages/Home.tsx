@@ -7,7 +7,11 @@ import { logements } from "../data/logements";
 const Home = () => {
   return (
     <div className="main">
-      <Banner imageUrl={bannerImage} text="Chez vous, partout et ailleurs" />
+      <Banner
+        imageUrl={bannerImage}
+        text="Chez vous, partout et ailleurs"
+        className="home"
+      />
       <div className="cards-container">
         {logements?.map((logement: Logement) => (
           <Card key={logement?.id} logement={logement} />

@@ -12,6 +12,15 @@
     width: 100%;
   }
 
+  &:hover {
+    img {
+      filter: brightness(100%);
+    }
+    p {
+      display: none;
+    }
+  }
+
   img {
     width: 100%;
     height: 100%;
